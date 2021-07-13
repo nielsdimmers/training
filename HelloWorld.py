@@ -1,20 +1,18 @@
+# HelloWorld.py
+# Niels Dimmers 2021
+# Shows custom message based on commandline name given or asks for name.
+# Requires at least python version 3 (python3)
+
 # Import system library to get version info.
 import sys
 
-# This script does only work with python 3 and later. So we're going to request the version.
-majorVersion = sys.version_info[0]
-
-# If statement to check version and exit if it is below 3
-if majorVersion <= 2:
-	print('To run this script, python version 3 is required.')
-	print('USAGE: \npython3 ./HelloWorld.py')
-	exit(2) # it is usually not neat to exit in the middle of a script, but it is the quickest way.
-
-# Simple print statement to say hello.
-print('Hello world!')
-
-# Ask for user input (your name) amd store it in variable 'userName'
-userName = input('What is your name? \n')
+# sys.argv contains commandline arguments, the first is the script name, the second the argument, if there are fewer than 2, ask for the name, otherwise, assume the given command is the name (useful for automated testing)
+if len(sys.argv) < 2 or sys.argv[1] == '':
+	# Ask for user input (your name) amd store it in variable 'userName'
+	userName = input('What is your name? \n')
+else:
+	# Set the name to the argument given on commandline
+	userName = sys.argv[1]
 
 # This is a dictionary mapping, mapping the keys (on the lef of the colon) with the values (on the right). 
 # This all is stored in a variable named 'nameMessages'.
@@ -34,4 +32,3 @@ returnMessage = nameMessages.get(userNameUpper, defaultMessage)
 
 # print the actual resulting message
 print(returnMessage)
-
