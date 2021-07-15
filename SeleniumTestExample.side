@@ -1,0 +1,90 @@
+{
+  "id": "88695e47-1393-4195-a597-af5b9a7e4443",
+  "version": "2.0",
+  "name": "testexample",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "11521172-444f-4864-9324-c93ec6020f22",
+    "name": "GoogleMe",
+    "commands": [{
+      "id": "dd77e1d9-11db-463b-b07f-234d16a82a7a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0c88db6-da27-4891-bbd6-cac7f693012d",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef380a08-8438-4200-9f20-0b64598e1294",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Steve Jobs"
+    }, {
+      "id": "64b97cd8-065d-41f8-99cd-4afa9cb1103f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "0e5ddf67-5c7d-4bc0-963d-940d9111f30a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g:nth-child(1) > div:nth-child(2) .LC20lb",
+      "targets": [
+        ["css=.g:nth-child(1) > div:nth-child(2) .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Steve Jobs - Wikipedia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6666a8e5-6013-4e91-9586-5a08d2adfb52",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@class=\"external text\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e8e300a-0d6c-479c-87ff-68cff8cd3475",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//img[@alt=\"Remembering Steve\"]",
+      "targets": [],
+      "value": "30000"
+    }]
+  }],
+  "suites": [{
+    "id": "2098a750-51e1-464e-bb48-1f98d3bb7707",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["11521172-444f-4864-9324-c93ec6020f22"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}

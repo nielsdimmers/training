@@ -21,6 +21,9 @@ Versions are named as follows:
 
 You can name them pretty much ny title you want, so feel free to come up with something witty ;-). Add new versions to the top, so users can easily see which version it is.
 
+## 3 - 2021-07-13 - Selenium autotest
+Added Selenium autotest example as an example of automated tests. Selenium is a great tool for showing how automated web tests can work, by visually showing every step of the process. To execute this, simply install the Selenium IDE plugin in your browser, open the plugin, open the Selenium autotest document in your plugin and press play. 
+
 ## 2 - 2021-07-12 - Added commandline arguments
 Changed the script so that, when you give in an argument on the commandline, it assumes that is the name you would like to use. This is the most likely way to do some automated testing. If you don't give an argument, your name is still asked by the script.
 
