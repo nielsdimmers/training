@@ -18,7 +18,7 @@ else:
 # This all is stored in a variable named 'nameMessages'.
 nameMessages = {
 	'NIELS':'Nice to see you, O grande creator!',
-	'ALEKS':'Well met, fair lady of the north.'
+	'ALEKS':'Hello there, Aleksandra'
 }
 
 # the f at the beginning of the string states that this one is special, and variables in the text between { and } should be replaced with values. This is the default message (if the name is not in the nameMessages list above.)
